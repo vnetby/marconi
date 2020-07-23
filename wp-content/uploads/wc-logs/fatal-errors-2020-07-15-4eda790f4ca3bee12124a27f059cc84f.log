@@ -1,0 +1,10 @@
+2020-07-15T08:35:13+00:00 CRITICAL Uncaught Error: Call to a member function getSkin() on null in /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/edge-cpt/post-types/portfolio/portfolio-register.php:68
+Stack trace:
+#0 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/edge-cpt/post-types/portfolio/portfolio-register.php(34): EdgeCore\CPT\Portfolio\PortfolioRegister->registerPostType()
+#1 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/edge-cpt/post-types/post-types-register.php(89): EdgeCore\CPT\Portfolio\PortfolioRegister->register()
+#2 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(287): EdgeCore\CPT\PostTypesRegister->register('')
+#3 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/vadzim/data/www/marconi.vnetby.net/wp-settings.php(518): do_action('after_setup_the...')
+#6 /var/www/vadzim/data/ww в /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/edge-cpt/post-types/portfolio/portfolio-register.php на строке 68
+

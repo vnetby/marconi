@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Banner shortcode start styles
+   ========================================================================== */
+
+.edgtf-banner {
+	position: relative;
+
+	.edgtf-banner-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.edgtf-banner-image {
+		@include edgtfTransition(all .25s ease-out);
+		img {
+			display: block;
+		}
+	}
+
+	.edgtf-banner-text-holder {
+		@include edgtfTransition(background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), all .25s ease-out );
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.edgtf-banner-text-table {
+			display: table;
+			width: 68%;
+			height: 100%;
+			padding: 50px;
+			box-sizing: border-box;
+
+			.edgtf-banner-text-cell {
+				display: table-cell;
+				vertical-align: top;
+				width: 100%;
+				height: 100%;
+
+				.edgtf-banner-subtitle {
+					font-size: 15px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+				}
+
+				.edgtf-banner-read-more {
+				    font-size: 12px;
+				    font-weight: 800;
+				    text-transform: uppercase;
+				    letter-spacing: 1.5px;
+				    position: absolute;
+				    top: auto;
+				    bottom: 47px;
+
+				    span {
+				    	display: inline-block;
+					    vertical-align: middle;
+					    margin-left: 5px;
+					    @include edgtfTransition(transform .3s ease);
+					    position: relative;
+					    font-size: 20px;
+					    top: -1px;
+
+				    }
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.edgtf-banner-text-holder {
+			background-color: rgba(48, 39, 28, 0.1);
+		}
+
+		.edgtf-banner-read-more span {
+			@include edgtfTransform(translateX(5px));
+	    }
+	} 
+
+}
+
+/* ==========================================================================
+   Banner shortcode end styles
+   ========================================================================== */

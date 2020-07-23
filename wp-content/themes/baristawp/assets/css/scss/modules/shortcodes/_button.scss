@@ -1,0 +1,197 @@
+.edgtf-btn {
+	display: inline-block;
+	position: relative;
+	outline: none;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: 2.5px;
+	padding: 14px 35px;
+	font-size: 13px;
+	line-height: 1.7em;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+
+	@include edgtfTransition(color 0.3s cubic-bezier(0.55, 0.21, 0.51, 0.75), background-color 0.3s cubic-bezier(0.55, 0.21, 0.51, 0.75), border-color 0.3s cubic-bezier(0.55, 0.21, 0.51, 0.75));
+	@include edgtfBoxSizing(border-box);
+
+	&.edgtf-btn-solid {
+		background-color: $first-main-color;
+		border: 2px solid $first-main-color;
+		color: #fff;
+
+		&:not(.edgtf-btn-custom-hover-color):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			color: #fff !important;
+		}
+
+		&:not(.edgtf-btn-custom-hover-bg):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			background-color: $second-main-color !important;
+		}
+
+		&:not(.edgtf-btn-custom-border-hover):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			border-color: $second-main-color !important;
+		}
+	}
+
+	&.edgtf-btn-solid-dark {
+		background-color: #fff;
+		border: 2px solid #fff;
+		color: $second-main-color;
+
+		&:not(.edgtf-btn-custom-hover-color):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			color: #fff !important;
+		}
+
+		&:not(.edgtf-btn-custom-hover-bg):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			background-color: $first-main-color !important;
+		}
+
+		&:not(.edgtf-btn-custom-border-hover):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			border-color: $first-main-color !important;
+		}
+	}
+	&.edgtf-btn-outline {
+		border: 2px solid $second-main-color;
+		color: $second-main-color;
+		background-color: transparent;
+
+		&:not(.edgtf-btn-custom-hover-color):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			color: #fff !important;
+		}
+
+		&:not(.edgtf-btn-custom-hover-bg):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			background-color: $second-main-color !important;
+		}
+
+		&:not(.edgtf-btn-custom-border-hover):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			border-color: $second-main-color !important;
+		}
+	}
+	&.edgtf-btn-outline-light {
+		border: 2px solid $default-border-color;
+		color: $default-border-color;
+		background-color: transparent;
+
+		&:not(.edgtf-btn-custom-hover-color):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			color: #fff !important;
+		}
+
+		&:not(.edgtf-btn-custom-hover-bg):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			background-color: $second-main-color !important;
+		}
+
+		&:not(.edgtf-btn-custom-border-hover):hover {
+			//important because of inline color attribute. :not is used so we don't have to use important in JS
+			border-color: $second-main-color !important;
+		}
+	}
+
+	&.edgtf-btn-transparent{
+		padding-left:0!important;
+		padding-right:0!important;
+		border:none;
+		background:transparent;
+		color: $first-main-color;
+		text-transform: uppercase;
+		i{
+			color:$first-main-color;
+			font-size: 28px;
+			vertical-align: middle;
+		}
+		&.edgtf-btn-icon {
+			i {
+				display: inline-block;
+				-webkit-transition: -webkit-transform .2s cubic-bezier(.1,0,.3,1);
+				transition: transform .2s cubic-bezier(.1,0,.3,1);
+			}
+			&:hover {
+				i {
+					@include edgtfTransform(translate3d(5px,0,0));
+				}
+			}
+		}
+
+		.edgtf-btn-text {
+		    position: relative;
+		}
+
+		*:not(.edgtf-btn-text ) {
+			position: relative;
+			top: -1px;
+			display:inline-block;
+			@include edgtfTransition(all 0.3s ease);
+		}
+
+		&:hover {
+
+			*:not(.edgtf-btn-text ) { 
+				@include edgtfTransform(translateX(5px));
+			}
+		}
+	}
+
+	&.edgtf-btn-small {
+		font-size: 11px;
+		padding: 11px 27px;
+		&.edgtf-btn-transparent{
+			i{
+				font-size: 14px;
+			}
+		}
+	}
+
+	&.edgtf-btn-medium {
+		//same as default
+		&.edgtf-btn-transparent{
+			font-size: 12px;
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+
+	&.edgtf-btn-large {
+		font-size: 14px;
+		padding: 15px 53px;
+
+	}
+
+	&.edgtf-btn-huge,
+	&.edgtf-btn-huge-full-width {
+		font-size: 16px;
+		padding:17px 65px;
+		&.edgtf-btn-transparent{
+			i{
+				font-size: 34px;
+			}
+		}
+	}
+
+	&.edgtf-btn-huge-full-width {
+		display: block;
+		text-align: center;
+	}
+
+	&.edgtf-btn-icon span:not(.edgtf-btn-text) {
+		font-size: 20px;
+		line-height:21px;
+		vertical-align: middle;
+	}
+
+}
+
+input[type=submit].edgtf-btn,
+button.edgtf-btn {
+	cursor: pointer;
+	-webkit-border-radius: 0px;
+}

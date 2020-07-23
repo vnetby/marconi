@@ -1,0 +1,105 @@
+/* ==========================================================================
+# Cafe Menu List style - begin
+========================================================================== */
+
+.edgtf-cafe-menu-list {
+	ul {
+		list-style-type: none;
+
+		li {
+			margin-bottom: 25px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.edgtf-cml-title-holder {
+		display: table-cell;
+		width: 1%;
+		white-space: nowrap;
+		padding-right: 5px;
+	}
+
+	.edgtf-cml-line {
+		height: 3px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		display: table-cell;
+		width: 98%;
+		z-index: 1;
+		position: relative;
+		bottom: 2px;
+	}
+
+	.edgtf-cml-price-holder {
+		display: table-cell;
+		width: 1%;
+		padding-left: 7px;
+		white-space: nowrap;
+	}
+
+	.edgtf-cml-bottom-holder {
+		position: relative;
+		top: 5px;
+	}
+	
+	.edgtf-cml-description-holder {
+		color: $first-main-color;
+		float: left;
+		width: 70%;
+		line-height: 1.2em;
+	}
+
+	.edgtf-cml-label-holder {
+		float: right;
+		position: relative;
+		width: 30%;
+		text-align: right;
+
+		.edgtf-cml-label {
+			background-color: $first-main-color;
+			color: $second-main-color;
+			font-family: $first-main-font;
+			font-style: italic;
+			padding: 3px 13px;
+			text-align: center;
+		}
+	}
+
+	&.edgtf-cml-with-featured-image {
+		.edgtf-cml-item-content {
+			padding-left: 110px;
+		}
+
+		.edgtf-cml-item-image {
+			float: left;
+			width: 83px;
+			position: relative;
+
+			a {
+				display: block;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&.edgtf-cml-light {
+		.edgtf-cml-title,
+		.edgtf-cml-price,
+		.edgtf-cml-label {
+			color: #fff;
+		}
+
+		.edgtf-cml-line {
+			border-bottom: 1px solid rgba(255,255,255,0.25);
+		}
+	}
+}
+
+/* ==========================================================================
+# Cafe Menu List style - end
+========================================================================== */

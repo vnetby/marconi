@@ -1,0 +1,18 @@
+2020-07-16T09:17:05+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Essl_Webpay_Gateway::get_canonical_package_rate_ids() in /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/webpay-belarus-woocommerce/webpay-belarus-woocommerce.php:297
+Stack trace:
+#0 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(151): WC_Essl_Webpay_Gateway->is_available()
+#1 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3683): WC_Payment_Gateways->get_available_payment_gateways()
+#2 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(287): wc_get_pay_buttons('')
+#3 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(36): do_a в /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/webpay-belarus-woocommerce/webpay-belarus-woocommerce.php на строке 297
+
+2020-07-16T09:17:24+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Essl_Webpay_Gateway::get_canonical_package_rate_ids() in /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/webpay-belarus-woocommerce/webpay-belarus-woocommerce.php:297
+Stack trace:
+#0 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(151): WC_Essl_Webpay_Gateway->is_available()
+#1 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3683): WC_Payment_Gateways->get_available_payment_gateways()
+#2 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(287): wc_get_pay_buttons('')
+#3 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /var/www/vadzim/data/www/marconi.vnetby.net/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(36): do_a в /var/www/vadzim/data/www/marconi.vnetby.net/wp-content/plugins/webpay-belarus-woocommerce/webpay-belarus-woocommerce.php на строке 297
+

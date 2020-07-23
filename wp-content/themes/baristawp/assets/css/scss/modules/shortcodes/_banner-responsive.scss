@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Banner shortcode start responsive styles
+   ========================================================================== */
+
+   @include ipad-landscape {
+	   .edgtf-banner .edgtf-banner-text-holder .edgtf-banner-text-table {
+   			width: 81%;
+   			padding: 35px;
+
+   			.edgtf-banner-title {
+   				font-size: 30px!important;
+   			}
+	   }
+
+      .edgtf-banner .edgtf-banner-text-holder .edgtf-banner-text-table .edgtf-banner-text-cell .edgtf-banner-read-more {
+         bottom: 32px;
+      }
+   }
+
+   @include ipad-portrait {
+	   .edgtf-banner .edgtf-banner-text-holder .edgtf-banner-text-table {
+   			padding: 100px 50px;
+	   }
+
+      .edgtf-banner .edgtf-banner-text-holder .edgtf-banner-text-table .edgtf-banner-text-cell .edgtf-banner-read-more {
+         bottom: 97px;
+      }
+   }
+   
+
+/* ==========================================================================
+   Banner shortcode end responsive styles
+   ========================================================================== */

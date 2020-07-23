@@ -1,0 +1,22 @@
+/* ==========================================================================
+# Title with number style - begin
+========================================================================== */
+.edgtf-title-with-number {
+	.edgtf-twn-number {
+		color: $first-main-color;
+		font-family: $first-main-font;
+		font-style: italic;
+		margin: 0 15px 0 0;
+		vertical-align: middle;
+		display: inline-block;
+		text-transform: none;
+		font-size: 60px;
+		letter-spacing: -3px;
+		font-weight: 400;
+		vertical-align: baseline;
+	}
+
+}
+/* ==========================================================================
+# Title with number style - end
+========================================================================== */

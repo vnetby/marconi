@@ -1,0 +1,48 @@
+/* ==========================================================================
+# Cafe Menu List responsive style - begin
+========================================================================== */
+.edgtf-cafe-menu-list {
+
+	@include phone-landscape {
+		.edgtf-cml-line {
+			display: none;
+		}
+
+		.edgtf-cml-price-holder {
+			text-align: right;
+		}
+
+		.edgtf-cml-label-holder {
+			float: none;
+			text-align: left;
+			width: 80%;
+			top: 10px;
+		}
+
+		.edgtf-cml-title-holder {
+			width: 80%;
+			white-space: normal;
+		}
+
+		.edgtf-cml-bottom-holder {
+			margin-bottom: 25px;
+    		margin-top: 3px;
+		}
+	}
+
+	&.edgtf-cml-with-featured-image {
+		@include phone-landscape {
+			.edgtf-cml-item-image {
+				display: none;
+			}
+
+			.edgtf-cml-item-content {
+			    padding-left: 0px;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+# Cafe Menu List responsive style - end
+========================================================================== */
